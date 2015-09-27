@@ -1,0 +1,34 @@
+<!doctype html>
+<html ng-app="jsh">
+  <head>
+    <title>Socket.IO chat</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+    </style>
+  </head>
+  <body>
+    <section ng-controller="MainController as mc">
+      <header>
+        <h3>Basic Content update data example:</h3>
+        <div ng-cloak>{{mc.data.payload}}</div>
+      </header>
+    </section>
+    <section>
+      <header>
+        <h3>D3 directive + websockets integration example ( super cool! )</h3>
+      </header>
+      <jsh-bar-chart></jsh-bar-chart>
+    </section>
+    <script src="d3/d3.js"></script>
+    <script src="angular/angular.js"></script>
+    <script src="angular-ui-router/build/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <script src="MainController.js"></script>
+    <script src="contentSocket.js"></script>
+    <script src="jshBarChart.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      
+    </script>
+  </body>
+</html>
